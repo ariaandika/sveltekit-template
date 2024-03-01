@@ -4,4 +4,18 @@
 
 @layer base {
     html, body { @apply h-full overflow-hidden }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+      cursor: pointer;
+    }
+
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { @apply bg-gray-900 rounded-md }
+
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+    input[type=number] { -moz-appearance: textfield; }
 }
