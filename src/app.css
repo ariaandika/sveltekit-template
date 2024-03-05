@@ -1,12 +1,9 @@
-@import url('/inter/inter.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    html, body { @apply h-full overflow-hidden }
-
-    * { font-family: "Inter", sans-serif; }
+    html, body { @apply h-full overflow-hidden font-["Inter"] }
 
     ::-webkit-scrollbar { @apply w-2 h-2 cursor-pointer }
     ::-webkit-scrollbar-track { background: transparent; }
