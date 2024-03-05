@@ -1,3 +1,4 @@
+@import url('/inter/inter.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,15 +6,11 @@
 @layer base {
     html, body { @apply h-full overflow-hidden }
 
-    ::-webkit-scrollbar {
-      width: 8px;
-      height: 8px;
-      cursor: pointer;
-    }
+    * { font-family: "Inter", sans-serif; }
 
+    ::-webkit-scrollbar { @apply w-2 h-2 cursor-pointer }
     ::-webkit-scrollbar-track { background: transparent; }
-    ::-webkit-scrollbar-thumb { @apply bg-gray-900 rounded-md }
-
+    ::-webkit-scrollbar-thumb { @apply bg-gray-300 rounded-md }
 
     input::-webkit-outer-spin-button,
     input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
